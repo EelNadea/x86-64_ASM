@@ -66,7 +66,7 @@ get_indiv_nums_loop:
 print_nums:
 
 	; 'r13' contains the address [rbp-24] in the "_start" stack frame.
-	; Add the value "counter-1" into r13 to obtain the address of the last stored character
+	; (r13 + Counter - 1) == the address of the last stored character
 	movzx rbx, byte [rbp-1]
 	add rbx, r13
 
