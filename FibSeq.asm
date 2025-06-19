@@ -44,7 +44,7 @@ exit:
 get_indiv_nums:
 	push rbp
 	mov rbp, rsp
-	sub rsp, 16
+	sub rsp, 1
 
 	mov byte [rbp-1], 0		; "Counter"
 	mov rax, [r12]			; Load dividend from address in r12
